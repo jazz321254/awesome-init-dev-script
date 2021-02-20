@@ -1,0 +1,40 @@
+{
+    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace, 'Source Code Pro for Powerline'",
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "dotnet-test-explorer.testProjectPath": "**/Test/**.csproj",
+    "coverage-gutters.lcovname": "coverage.info",
+    "coverage-gutters.coverageFileNames": [
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml"
+    ],
+    "git.autofetch": true,
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue"
+    ],
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "vetur.validation.template": false,
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatter.ts": "none",
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "window.zoomLevel": 0,
+    // "omnisharp.useGlobalMono": "always",
+    // "omnisharp.path": "1.37.5",
+    "omnisharp.autoStart": true
+}
