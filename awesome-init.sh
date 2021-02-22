@@ -13,6 +13,7 @@
 #    a. Inatall language framework
 #       * NVM (Node)
 #       * Dotnet Core
+#       * Java
 #    b. Install IDE
 #       * VS Code
 #       * Neovim
