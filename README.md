@@ -7,7 +7,7 @@
 請依序執行以下指令  
 ```
 curl -L https://github.com/jazz321254/awesome-init-dev-script/archive/master.tar.gz | tar xvz
-cd awesome-init-dev-scirpt-master
+cd awesome-init-dev-script-master
 bash ./awesome-init.sh  
 ```  
 安裝完成後，請再確認以下設定：
