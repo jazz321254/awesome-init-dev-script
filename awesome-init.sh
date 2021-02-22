@@ -100,7 +100,7 @@ if [ ! -d "/Applications/Chromium.app" ]; then
 	echo "Installing chromium" 
 	brew install --cask --appdir="/Applications" chromium
 fi
-brew install --cask stats
+brew install --cask --appdir="/Applications" stats
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh (Z shell)..."
@@ -151,6 +151,25 @@ curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel LTS #
 rm /usr/local/bin/dotnet 2> /dev/null
 sudo ln -s $HOME/.dotnet/dotnet /usr/local/bin/dotnet
 dotnet --info
+
+# Install JDK
+brew tap AdoptOpenJDK/openjdk
+brew install --cask adoptopenjdk12
+
+# Install jenv
+brew install jenv
+mkdir -p ~/.jenv/versions
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+exec $SHELL -l
+jenv enable-plugin export
+jenv add $(/usr/libexec/java_home)
+jenv global $(ls $HOME/.jenv/versions | head -1)
+
+# Install Maven
+brew install maven
 
 # Install IDE
 echo "Installing VSCode..."
