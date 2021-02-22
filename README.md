@@ -12,11 +12,6 @@ bash ./awesome-init.sh
 ```  
 安裝完成後，請再確認以下設定：
 
-### iTerm2字型設定
-
-進入iTerm2 > Preferences > Profiles > Text  
-點 Change Font 選 Hack Nerd Font  
-
 ### Powerlevel10k設定theme  
 
 基本上第一次進入就會要求你設定，如果想重新設定請執行：  
@@ -30,4 +25,6 @@ p10k configure
 
 ## 備註  
 
-安裝virtualbox時，需要去隱私權那邊開啟允許權限。還有，開啟iTerm時會有Warning的話....。最後記得去LaunchPad啟動Stats來監控你的電腦資源。
+安裝virtualbox時，需要去隱私權那邊開啟允許權限。還有，開啟iTerm時會有Warning的話，要確認是否有開啟Instant prompt模式，還有zsh權限安全問題。最後記得去LaunchPad啟動Stats來監控你的電腦資源。詳細說明可以參考我的[個人網站][1]。
+
+[1]: https://www.jazz321254.com/2021-happy-bag/
