@@ -100,6 +100,7 @@ if [ ! -d "/Applications/Chromium.app" ]; then
 	echo "Installing chromium" 
 	brew install --cask --appdir="/Applications" chromium
 fi
+brew install --cask stats
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh (Z shell)..."
